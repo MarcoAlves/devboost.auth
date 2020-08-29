@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "k26Z5ZtJ1VkuIlFcqrppwEMTUq1Hcd25u5MPI9VuI8LyQ7gvmK8HH3q1eorpTkESheAenHcoQSAsT1Nxo9JPZw==",
+  "success": true,
+  "projectFilePath": "D:\\Pessoais\\devboost.auth\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Felipe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
