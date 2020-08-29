@@ -29,17 +29,11 @@ namespace devboost.jwt
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddCors();
             services.AddControllers();
 
-            services.AddCors();
-
-            var key = Encoding.ASCII.GetBytes(Settings.Secret);
-
-            //var tokenConfigurations = new TokenConfigurations();
-            //new ConfigureFromConfigurationOptions<TokenConfigurations>(
-            //    Configuration.GetSection("TokenConfigurations"))
-            //        .Configure(tokenConfigurations);
-            //services.AddSingleton(tokenConfigurations);
+            var key = Encoding.UTF8.GetBytes(Settings.Secret);
 
             services.AddAuthentication(authOptions =>
             {
@@ -58,14 +52,6 @@ namespace devboost.jwt
                 };
             });
 
-            //services.AddAuthorization(auth =>
-            //{
-            //    auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
-            //        .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
-            //        .RequireAuthenticatedUser().Build());
-            //});
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,15 +62,15 @@ namespace devboost.jwt
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(_ => _.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseCors(_ => _.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthentication();
+            
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

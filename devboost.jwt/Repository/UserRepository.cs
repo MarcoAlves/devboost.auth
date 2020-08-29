@@ -20,5 +20,20 @@ namespace devboost.jwt.Repository
 
         }
 
+        public static List<User> GetAllProfessores()
+        {
+
+            List<User> users = new List<User>()
+            {
+                new User() { Id = 0, UserName = "Marco", Password = "123456", Role = "Admin" },
+                new User() { Id = 1, UserName = "Eric", Password = "9517539", Role = "Teacher" },
+                new User() { Id = 1, UserName = "Felipe", Password = "564654", Role = "Teacher" },
+                new User() { Id = 1, UserName = "Jefferson", Password = "121245", Role = "Teacher" }
+            };
+
+            return users.Where(_ => _.Role == "Teacher").ToList();
+
+        }
+
     }
 }

@@ -14,20 +14,6 @@ namespace devboost.jwt
         public static string GenerateToken(User user)
         {
 
-            //var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Settings.Secret));
-            //var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            //var expiration = DateTime.UtcNow.AddHours(2);
-
-            //var token = new JwtSecurityToken(
-            //    issuer: null,
-            //    audience: null,
-            //    expires: expiration,
-            //    signingCredentials: creds
-            //);
-
-            //return new JwtSecurityTokenHandler().WriteToken(token);
-
-
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(Settings.Secret);
 

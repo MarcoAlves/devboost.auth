@@ -12,7 +12,7 @@ namespace devboost.jwt.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class HomeController : ControllerBase
+    public class HomeController : Controller
     {
         [HttpGet]
         public ActionResult Get()
@@ -25,10 +25,13 @@ namespace devboost.jwt.Controllers
         [Authorize]
         public string GetCurso()
         {
-
             return "Algoritmo";
+        }
 
-        } 
+        [HttpGet]
+        [Route("professores")]
+        [Authorize(Roles = "Admin")]
+        public List<string> Employee() => UserRepository.GetAllProfessores().Select(_ => _.UserName).ToList();
 
         [AllowAnonymous]
         [HttpPost]
