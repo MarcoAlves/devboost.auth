@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UMZSi6A1lasTRp9s6PzeQMzOVF+rW3RO0ZOaMNNaSaTL/byxg3tINEJzebRZN9KGh7Qsb1NkKTg29OBqX4BSLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marqu\\Documents\\Git\\devboost.auth\\devboost.auth\\OAuth\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

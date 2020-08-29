@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "LOgB/VRuuImaqrWjXGGBDgVSfcago2o1ZX0jF65xPAIY59aDDWAYtj9kwA5/s4afKDcSfyssQ5+b7SH8y5Sc4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marqu\\Documents\\Git\\devboost.auth\\devboost.auth\\OAuth\\IdentityServer-Console\\IdentityServer-Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marqu\\.nuget\\packages\\identitymodel\\4.1.0\\identitymodel.4.1.0.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\marqu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
